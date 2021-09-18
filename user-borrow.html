@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="bootstrap.css" />
 <link rel="stylesheet" href="bootstrap-admin-theme.css" />
 <link rel="stylesheet" href="bootstrap-theme.css" />
+<link rel="stylesheet" href="user.css" />
 <script src="jquery-3.1.1.min.js"></script>
 <script src="bootstrap.min.js"></script>
 </head>
@@ -16,208 +17,13 @@
 
 <body>
 <style type="text/css" spry:hover="modal-backdrop">
-
-*{
-	padding:0;
-	margin:0;
-}
-
-ul li{
-	list-style:none;
-}
-
-a{
-	text-decoration:none;
-}
-.header{
-	position:absolute;
-	width:100%;
-	height:310px;
-	background-image:url(head_bg.jpg);
-	background-size:100%;
-	background-repeat:no-repeat;
-}
-
-.header .img{
-	position:absolute;
-	top:10%;
-	margin-top:0%;
-}
-
-.header .username{
-	position:absolute;
-	z-index:10;
-	top:28%;
-	left:6.8%;
-	font-size:30px;
-	color:white;
-	width:310px;
-	height:110px;
-	text-align:center;
-	line-height:110px;
-	font-weight:bold;
-	
-}
-
-
-.header .username a{
-	width:100%;
-	height:100%;
-	color:white;
-	display:block;
-}
-
-.header .nav{
-	width:100%;
-	height:50px;
-	position:absolute;
-	bottom:0;
-	left:0;
-	background-color:#169fe6;
-	opacity:0.85;
-}
-
-.header .nav ul li{
-	float:left;
-	width:150px;
-	height:50px;
-	margin-left:10px;
-	text-align:center;
-	line-height:50px;
-	font-size:20px;
-	color:#fff;
-}
-
-.header .nav ul li a{
-	width:100%;
-	height:100%;
-	display:block;
-	color:#fff;
-	text-decoration:none;
-}
-
-.header .nav ul li a:hover{
-	background-color:#fff;
-	color:#169fe6;
-}
-
-
-.nav ul li .dropdown-menu li a{
-	color:#fff;
-	font-size:14px;
-	margin-left:-10px;
-	width:100%;
-}
-
-.body{
-	clear:both;
-	overflow:hidden;
-	float:left;
-	top:0;
-	width:100%;
-	height:1030px;
-	background-color:#e9ecf3;
-	position:relative;
-	z-index:-3;
-}
-
-
-.content{
-	width:90%;
-	height:100%;
-	float:left;
-	margin-left:5%;
-	position:relative;
-	z-index:-1;
-}
-
-.content .left{
-	width:23%;
-	height:100%;
-	float:left;
-}
-
-.content .right{
-	width:77%;
-	float:left;
-	height:100%;
-}
-
-
-.left .left_item{
-	margin-top:20px;
-	width:100%;
-	float:left;
-}
-
-.left .left_item .title{
-	width:100%;
-	height:40px;
-	text-align:center;
-	background-color:#169fe6;
-	color:#fff;
-	font-size:20px;
-	line-height:40px;
-}
-
-.left .left_item .context{
-	width:100%;
-	min-height:150px;
-	background-color:#fff;
-	color:black;
-	font-size:16px;
-	padding:10px;
-}
-
-.left .left_item .notic{
-	height:150px;
-}
-
-.left .left_item .context marquee label{
-	font-size:14px;
-	font-weight:normal;
-}
-
-
-.left .left_item .context a{
-	display:block;
-	margin-top:5px;
-}
-
-
-.footer{
-	width:100%;
-	height:50px;
-	background-color:#169fe6;
-	float:left;
-}
-
-.footer label{
-	display:block;
-	width:100%;
-	height:100%;
-	line-height:50px;
-	text-align:center;
-	float:left;
-	color:#fff;
-}
-
-.table thead tr th{
-	background-color:#169fe6;
-	color:#fff;
-}
-
-.table tbody td{
-	background-color:#fff;
-}
-
 </style>
 <div>
    <div class="header"> <img class="img" src="title-yellow1.png"/>
     <div  class="username"><a href="user-index.html">xxx,你好</a></div>
     <div class="nav">
       <ul>
-        <li><a href="#">图书查询</a></li>
+        <li><a href="user-query.html">图书查询</a></li>
         <li><a href="user-borrow.html">借阅信息</a></li>
         <li><a href="#">借阅历史</a></li>
         <li class="dropdown"> <a href="#" role="button" data-hover="dropdown" data-toggle="dropdown">我的</a>
@@ -239,14 +45,14 @@ a{
         <div class="title">公告</div>
         <div class="context">
           <marquee width="100%" height="100%" direction="up" scrolldelay="300">
-          <label>发布人:图书管理员</label><br>
-          <label>发布时间：2021-9-18</label><br>
-          <label>发布内容：新书到了</label><br>
+          <label>发布人:图书管理员</label>
+          <label>发布时间：2021-9-18</label>
+          <label>发布内容：新书到了</label>
           <label>------------------------------------</label>
           </br>
           <label>发布人:图书系统管理员</label>
           <label>发布时间：2021-9-18</label>
-          <label>发布内容：计划将于2021年09月30日更新，会影响部分功能的使用，更新时常大约为2小时</label>
+          <label>发布内容：计划于2021-10-1更新系统，届时将会影响部分能的使用</label>
           <label>------------------------------------</label>
           </br>
           </marquee>
@@ -255,7 +61,7 @@ a{
       <div class="left_item">
         <div class="title">热门书籍</div>
         <div class="context">
-          <div style="font-size:14px; width:100%; padding:5x; color:black;">
+          <div style="font-size:14px; width:100%; padding:5px; color:black;">
             <label style="font-size:15px; font-weight:normal;">Mysql入门</label>
             <br />
             <label style="font-size:15px; font-weight:normal;">Mysql入门</label>
@@ -285,24 +91,9 @@ a{
               <div class="col-lg-12">
                 <div class="panel panel-default bootstrap-admin-no-table-panel">
                   <div class="panel-heading">
-                    <div class="text-muted bootstrap-admin-box-title">查询</div>
+                    <div class="text-muted bootstrap-admin-box-title">当前借阅信息</div>
                   </div>
-                  <div class="bootstrap-admin-no-table-panel-content bootstrap-admin-no-table-panel-content collapse in">
-                  	<form class="form-horizontal" action="#" method="post">
-                    	<input type="hidden" name="tip" value="2" />
-                        <div class="col-lg-8 form-group">
-                        	<label class="col-lg-4 control-label" for="query-bname">图书名称</label>
-                            <div class="col-lg-8">
-                            	<input class="form-control" id="bookName" name="bookName" type="text" value="" />
-                                <input class="control-label" for="query-bname" style="display:none"></label> 
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 form-group">
-                        	<button type="submit" class="btn btn-primary" id="btn_query">查询</button>
-                        </div>
-                    </form>         
-                  </div>
+            
                 </div>
               </div>
             </div>
@@ -313,11 +104,11 @@ a{
                     	<thead>
                         	<tr>
                             	<th>图书号</th>
-                                <th>图书类型</th>
                                 <th>图书名称</th>
-                                <th>作者名称</th>
-                                <th>出版社</th>
-                                <th>总数量</th>
+                                <th>读者账号</th>
+                                <th>借阅人</th>
+                                <th>借阅日期</th>
+                                <th>截至还书日期</th>
                                 <th>操作</th>
                             </tr>
                         </thead>
@@ -327,55 +118,55 @@ a{
                         	<tr>
                             	<th>rj1001</th>
                                 <th>软件编程</th>
-                                <th>mysql</th>
+                                <th>13606716146</th>
                                 <th>小游</th>
-                                <th>清华大学出版社</th>
-                                <th>10</th>
+                                <th>2021-9-18 12:00</th>
+                                <th>2021-10-18 12:00</th>
                                 <th>
-                                	<button type="button" class="btn btn-info btn-xs" data-toggle="model" onclick="#">借阅</button>
+                                	<button type="button" class="btn btn-info btn-xs" data-toggle="model" onclick="#">还书</button>
                                 </th>
                             </tr>
                         </tbody>
                         
                         <tbody>
-                        	<tr>
-                            	<th>rj1001</th>
+                            <tr>
+                                <th>rj1001</th>
                                 <th>软件编程</th>
-                                <th>mysql</th>
+                                <th>13606716146</th>
                                 <th>小游</th>
-                                <th>清华大学出版社</th>
-                                <th>10</th>
+                                <th>2021-9-18 12:00</th>
+                                <th>2021-10-18 12:00</th>
                                 <th>
-                                	<button type="button" class="btn btn-info btn-xs" data-toggle="model" onclick="#">借阅</button>
+                                    <button type="button" class="btn btn-info btn-xs" data-toggle="model" onclick="#">还书</button>
                                 </th>
                             </tr>
                         </tbody>
                         
                         <tbody>
-                        	<tr>
-                            	<th>rj1001</th>
+                            <tr>
+                                <th>rj1001</th>
                                 <th>软件编程</th>
-                                <th>mysql</th>
+                                <th>13606716146</th>
                                 <th>小游</th>
-                                <th>清华大学出版社</th>
-                                <th>10</th>
+                                <th>2021-9-18 12:00</th>
+                                <th>2021-10-18 12:00</th>
                                 <th>
-                                	<button type="button" class="btn btn-info btn-xs" data-toggle="model" onclick="#">借阅</button>
+                                    <button type="button" class="btn btn-info btn-xs" data-toggle="model" onclick="#">还书</button>
                                 </th>
                             </tr>
                         </tbody>
                         
                         
                         <tbody>
-                        	<tr>
-                            	<th>rj1001</th>
+                            <tr>
+                                <th>rj1001</th>
                                 <th>软件编程</th>
-                                <th>mysql</th>
+                                <th>13606716146</th>
                                 <th>小游</th>
-                                <th>清华大学出版社</th>
-                                <th>10</th>
+                                <th>2021-9-18 12:00</th>
+                                <th>2021-10-18 12:00</th>
                                 <th>
-                                	<button type="button" class="btn btn-info btn-xs" data-toggle="model" onclick="#">借阅</button>
+                                    <button type="button" class="btn btn-info btn-xs" data-toggle="model" onclick="#">还书</button>
                                 </th>
                             </tr>
                         </tbody>
